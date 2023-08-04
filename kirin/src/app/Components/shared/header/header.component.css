@@ -1,0 +1,43 @@
+
+.header{
+  width: 100%;
+  height: 80px;
+  background-image: radial-gradient(#343933, #282d27, #242621);
+  box-shadow: 0px 1px 11px 1px black;
+
+}
+
+.header img{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logo{
+  height: 100px;
+  margin: -15px;
+}
+
+.nav-right,
+.nav-left{
+  margin: 27px 10px;
+}
+
+.nav-left{
+  justify-content: end;
+}
+.header .nav-right a,
+.header .nav-left a{
+  padding: 30px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(214, 209, 209);
+  margin: 0px 20px;
+  font-family: abe;
+  font-weight: 600;
+}
+.header .nav-right{
+  text-align: left;
+}
+.header .nav-left{
+  text-align: right;
+}
