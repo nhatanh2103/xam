@@ -1,4 +1,17 @@
 
+/* wrapper */
+.wrapper{
+  background-image: url("../img/wallpaperflare_dark.png");
+  background-size: cover;
+
+  height: 680px;
+  background-position: 0px -333px;
+  position: relative;
+  z-index: -1;
+}
+
+
+
 .wrapper .box{
   position: absolute;
   left: 50%;
