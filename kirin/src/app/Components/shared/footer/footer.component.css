@@ -3,8 +3,7 @@
 .footer{
   box-shadow: 0px 0px 4px 0px black;
   border-top: 1px solid black;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  padding: 40px 0;
   background-image: radial-gradient(#343933, #282d27, #242621);
 }
 
@@ -18,17 +17,21 @@
 .footer .telephone,
 .footer .email{
   display: flex;
+  margin: 5px 0;
 }
 
-.footer .time i,
-.footer .location i,
-.footer .telephone i,
-.footer .email i{
-  height: 24px;
-  width: 24px;
+.footer .time svg,
+.footer .location svg,
+.footer .telephone svg,
+.footer .email svg{
+  height: 20px;
+  width: 20px;
   font-size: 20px;
   margin-right: 5px;
-  margin-top: 1px;
+  /* margin-top: 1px; */
+  color: #acacac;
+  margin-bottom: 10px;
+
 }
 
 
@@ -49,12 +52,15 @@
 }
 
 
-.footer_right h1,i,p,
-.footer_mid h1,i,p,
-.footer_left h1,i,p{
+.footer .footer_right h1,svg,p,
+.footer .footer_mid h1,svg,p,
+.footer .footer_left h1,svg,p{
   color: #acacac;
 
 }
+
+
+
 
 .footer_right h1,
 .footer_mid h1,
@@ -65,13 +71,18 @@
 
 }
 
-.footer p{
+.footer p {
   font-size: 15px;
+  padding: 0 4px;
+  padding-top: 3px;
+  padding-bottom: 7px;
+  font-family: abe;
 }
 
 
 .footer .high_text3 h1{
   padding-top: 10px;
+  
 }
 
 .footer_mid .location h4{
@@ -82,10 +93,7 @@
 }
 
 
-.footer .location p:first-child{
 
-  margin-bottom: 10px;
-}
 
 .footer .high_text1 h1,
 .footer .high_text2 h1,
@@ -93,9 +101,8 @@
 .footer .high_text4 h1{
   padding-top: 10px;
   letter-spacing: 3px;
+  font-family: abe;
 }
-
-
 
 
 
@@ -119,12 +126,13 @@
   padding: 15px 25px;
   margin: 10px;
   border-radius: 50%;
+  color: #acacac;
 }
 .social_icons a:first-child{
   margin-left: 0px;
 }
 
-.social_icons a i{
+.social_icons a svg{
   position: absolute;
   top: 50%;
   font-size: 2em;
@@ -139,7 +147,7 @@
 
 }
 
-.social_icons a:hover i{
+.social_icons a:hover svg{
   color: #acacac;
   transition: 0.5s;
 }

@@ -31,6 +31,6 @@ a{
 
 @font-face {
 	font-family: abe;
-	src: url(../ABeeZee/ABeeZee-Italic.ttf);
-	src: url(../ABeeZee/ABeeZee-Regular.ttf);
+	src: url(assets/ABeeZee/ABeeZee-Italic.ttf);
+	src: url(assets/ABeeZee/ABeeZee-Regular.ttf);
 }

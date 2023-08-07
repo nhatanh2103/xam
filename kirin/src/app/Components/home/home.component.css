@@ -1,7 +1,7 @@
 
 /* wrapper */
 .wrapper{
-  background-image: url("../img/wallpaperflare_dark.png");
+  background-image: url("../../../assets/img/wallpaperflare_dark.png");
   background-size: cover;
 
   height: 680px;
@@ -93,7 +93,14 @@
   background-color: black;
 }
 
-.about_us .box_text::after{
+
+.about_us .open_close{
+  position: relative;
+
+}
+
+
+.about_us .open_close::after{
   position: absolute;
   content: "";
   background-color: white;
@@ -108,7 +115,7 @@
   margin: -1px;
 }
 
-.about_us .box_text::before{
+.about_us .open_close::before{
   position: absolute;
   content: "";
   background-color: white;
@@ -128,13 +135,16 @@
 .about_us .image1,
 .about_us .image2,
 .about_us .image3{
-  width: 530px;
+  width: auto;
+  height: 575px;
 }
 .about_us .image1 img,
 .about_us .image2 img,
 .about_us .image3 img{
   width: 100%;
   border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about_us .text span{
@@ -150,16 +160,14 @@
 }
 
 .about_us .text p{
-  letter-spacing: 1.5;
+  color: red;
   font-family: abe;
   color: rgba(0, 0, 0, 0.685);
   text-align: justify;
 }
 
 
-.about_us .h_text{
-  position: relative;
-}
+
 /* .about_us .h_text::after{
   position: absolute;
   content: "";
@@ -172,10 +180,10 @@
   border-top: 3px solid black;
   border-left: 3px solid black;
   z-index: -1;
-} */
+}  */
 
-
-/* .about_us .h_text::before{
+/* 
+.about_us .h_text::before{
   position: absolute;
   content: "";
   background-color: white;
@@ -191,7 +199,7 @@
 
 .about_us .image2{
   float: right;
-}
+} 
 
 
 
@@ -269,9 +277,10 @@
 }
 
 .gallery .gallery_image img{
-  height: 80%;
-  width: 100%;
-  transition: transform .5s, filter 1.5s ease-in-out;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .5s, filter 1.5s ease-in-out;
 }
 
 
@@ -306,15 +315,16 @@
 
 
 .slider_wrapper{
-  padding: 30px 0;
+  padding-top: 10px;
   margin-bottom: 10px;
+  padding-bottom: 30px;
 
 }
 
 
 .slider_wrapper .carousel-item {
   width: 100%;
-  height: 600px;
+  height: 500px;
 
 }
 
@@ -322,7 +332,7 @@
 .slider_wrapper .carousel-item img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:contain;
 }
 
 .slider_wrapper h3{
@@ -344,6 +354,7 @@
   font-weight: 500;
   font-family: abe;
   color: black;
+  margin-bottom: 30px;
 }
 
 .slider_wrapper .high_text::after{
@@ -436,14 +447,16 @@
 }
 
 .contact .contact_us h1{
-  padding: 25px 0;
+  padding: 35px 0;
   text-align: center;
   color: white;
   font-weight: 700;
-  letter-spacing: 0em;
+  letter-spacing: 4.5px;
   line-height: 1.15;
   font-family: abe;
+  font-size: 2em;
 }
+
 
 .contact .contact_us .box h3{
   font-weight: 700;

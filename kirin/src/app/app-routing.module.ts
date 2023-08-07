@@ -13,7 +13,7 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
-        title: ''
+        title: 'Kirin Tatoo Studio'
       }
     ]
   }
