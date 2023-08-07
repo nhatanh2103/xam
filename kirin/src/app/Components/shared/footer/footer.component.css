@@ -1,0 +1,157 @@
+/* footer */
+.footer{
+  box-shadow: 0px 0px 4px 0px black;
+  border-top: 1px solid black;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  background-image: radial-gradient(#343933, #282d27, #242621);
+}
+
+.footer h1{
+  font-size: 2em;
+  font-weight: 600;
+  font-family: abe;
+}
+.footer .time,
+.footer .location,
+.footer .telephone,
+.footer .email{
+  display: flex;
+}
+
+.footer .time i,
+.footer .location i,
+.footer .telephone i,
+.footer .email i{
+  height: 24px;
+  width: 24px;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+
+
+
+.footer_logo {
+  margin-top: 10px;
+  width: 240px;
+  position: relative;
+}
+
+.footer_logo img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  transform: translate(-20%);
+}
+
+
+.footer_right h1,i,p,
+.footer_mid h1,i,p,
+.footer_left h1,i,p{
+  color: #acacac;
+
+}
+
+.footer_right h1,
+.footer_mid h1,
+.footer_left h1{
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+
+}
+
+.footer p{
+  font-size: 15px;
+}
+
+
+.footer .high_text3 h1{
+  padding-top: 10px;
+}
+
+.footer_mid .location h4{
+  color: #acacac;
+  font-size: 15px;
+  font-family: abe;
+  margin-left: 33px;
+}
+
+
+.footer .location p:first-child{
+
+  margin-bottom: 10px;
+}
+
+.footer .high_text1 h1,
+.footer .high_text2 h1,
+.footer .high_text3 h1,
+.footer .high_text4 h1{
+  padding-top: 10px;
+  letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Social icons */
+.social_icons{
+  margin-top: 25px;
+}
+.social_icons a{
+  position: relative;
+  background-color: #acacac;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social_icons a:first-child{
+  margin-left: 0px;
+}
+
+.social_icons a i{
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.social_icons a:hover{
+  background-color: #0c0c0c;
+  transition: 0.5s;
+
+}
+
+.social_icons a:hover i{
+  color: #acacac;
+  transition: 0.5s;
+}
+
+
+
+.reserved{
+  background-color: black;
+  padding: 10px 0;
+  border-top: 1px solid black ;
+}
+.reserved p{
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.625);
+  letter-spacing: 1.5;
+}
