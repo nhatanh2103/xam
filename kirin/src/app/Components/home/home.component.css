@@ -10,7 +10,7 @@ html{
   height: 680px;
   background-position: 0px -333px;
   position: relative;
-  z-index: -1;
+
 }
 
 
@@ -19,18 +19,22 @@ html{
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,300%);
+  transform: translate(-50%,-50%);
 }
 
 .home-PC .wrapper .box h1{
   text-shadow: rgb(255 3 3 / 76%) 6px -3px 0px, black 0px 0px 20px;
   font-weight: 900;
   letter-spacing: 10px;
+  font-family: abe;
+
+  font-size: 40px;
 }
 
 .home-PC .wrapper .box p{
   letter-spacing: 1px;
-
+  margin: 10px 0 20px 0;
+  font-size: 18px;
 }
 
 .home-PC .wrapper .box p,
@@ -44,7 +48,7 @@ html{
 
 .home-PC .wrapper .box .small-box{
   width: 200px;
-  background: #ff030352;
+  background-color: #ff030352;
   position: absolute;
   padding: 10px;
   left: 50%;
@@ -54,19 +58,40 @@ html{
   box-shadow: 0px 0px 7px 0px black;
 }
 
-.home-PC .wrapper .box .small-box a{
+
+.home-PC .wrapper .box .small-box:hover{
+  width: 220px;
+  background-color: #ff030352;
+  position: absolute;
+  padding: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 7px 0px black;
+  transition: width 0.3s;
+}
+
+.home-PC .wrapper .box .small-box:hover p{
+  font-size: 22px;
+  transition: font-size 0.3s;
+  color: rgba(255, 255, 255, 0.896);
+}
+.home-PC .wrapper .box .small-box {
   text-decoration: none;
+
 }
 
 .home-PC .wrapper .box .small-box p{
   font-family: abe;
   color: rgba(255, 255, 255, 0.896);
   text-align: center;
-  margin-bottom: 0;
+  margin: 5px 0;
   font-weight: 600;
   letter-spacing: 2px;
-
+  font-size: 20px;
 }
+
 
 
 /* About Us */
@@ -163,20 +188,35 @@ html{
 }
 
 .home-PC .about_us .text p{
-  color: red;
+
   font-family: abe;
   color: rgba(0, 0, 0, 0.685);
   text-align: justify;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.home-PC .about_us .text p{
+  margin-top: 30px;
 }
 
 .home-PC .about_us .image2{
   float: right;
-} 
+}
 
 /* Map */
 .home-PC .map{
   padding: 80px 0;
 }
+.home-PC .map .map_left p{
+  font-family: abe;
+  color: rgba(0, 0, 0, 0.685);
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+
 
 .home-PC .map .map_right{
   width: 500px;
@@ -207,17 +247,19 @@ html{
 
 .gallery{
   background-color: white;
-  padding-bottom: 130px;
+  padding-bottom: 30px;
 }
 
 .home-PC .gallery .gallery_image{
-  padding-top: 30px;
-  height: 460px;
+  margin: 35px 0;
+}
+.home-PC .gallery .gale_img{
+  height: 500px;
   width: 100%;
 }
 
 .home-PC .gallery .gallery_image img{
-    height: 70%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transition: transform .5s, filter 1.5s ease-in-out;
@@ -395,9 +437,15 @@ html{
 
 
 
-/* Mobile */
+/*----------------------------------- Mobile --------------------------------*/
+.home-MB p,
+.home-MB span,
+.home-MB h1,
+.home-MB h3{
+  font-family: abe;
+}
 .home-MB .inbox{
-  padding: 0;
+
   position: relative;
   height: fit-content;
 }
@@ -405,57 +453,76 @@ html{
 .home-MB .inbox img{
   width: 100%;
   height: auto;
-  z-index: -1;
+
 }
 
-.home-MB .pic{
+/* .home-MB .pic{
   position: relative;
   z-index: -1;
-}
+} */
 
 .home-MB .text{
   position: absolute;
-  transform: translate(-50%,300%);
-  bottom: 300px;
+
+  top: 40%;
   left: 50%;
+  transform:  translate(-50%,-50%);
+
 }
 
 .home-MB .text h1{
-  text-shadow: rgb(255 3 3 / 76%) 6px -3px 0px, black 0px 0px 20px;
+  text-shadow: rgb(255 3 3 / 76%) 3px -1px 0px, black 0px 0px 20px;
   color: white;
   font-weight: 900;
   letter-spacing: 10px;
   text-align: center;
+  font-family: abe;
+  font-size: 15px;
 }
 
 .home-MB .text p{
   letter-spacing: 1px;
   color: white;
   text-align: center;
+  font-family: abe;
+  margin: 10px 0;
+  font-size: 15px;
 }
 
 .home-MB .box-contact{
   width: 150px;
-  background: #ff030352;
+  background-color: #ff030352;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 7px 0px black;
+}
+.home-MB .box-contact:hover{
+  width: 150px;
+  background-color: #ff030389;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0px 0px 7px 0px black;
+  transition: background-color 2s;
 }
-
 /* About us */
 .home-MB .about_us{
   height: fit-content;
   position: relative;
-  z-index: -1;
+
 }
 
 .home-MB .title_about_us h1{
   text-align: center;
   padding: 5% 0px;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .home-MB .pic_about_us img{
@@ -467,7 +534,7 @@ html{
   position: relative;
 }
 
-.home-MB .pic_about_us .infor p::before{
+.home-MB .pic_about_us .infor h1::before{
   position: absolute;
   content: "";
   background-color: white;
@@ -483,7 +550,7 @@ html{
   margin-bottom: 5px;
 }
 
-.home-MB .pic_about_us .infor p::after{
+.home-MB .pic_about_us .infor h1::after{
   position: absolute;
   content: "";
   background-color: white;
@@ -497,7 +564,23 @@ html{
 }
 
 .home-MB .infor p{
+  margin-top: 10px;
+
+  font-size: 10px;
+  color: #acacac;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.home-MB .infor span{
+  color: black;
+  font-size: 10px;
+}
+.home-MB .infor h1{
   margin-left: 5px;
+  font-weight: 600;
 }
 
 /* View tatto shop */
@@ -509,6 +592,7 @@ html{
   text-align: center;
   padding: 5% 0px;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .home-MB .some_photo .carousel-item{
@@ -523,14 +607,77 @@ html{
 
 /* Gallery */
 .home-MB .gallery{
-  padding: 0px 12px;
+  margin-top: 30px;
+  position: relative;
 }
+.home-MB .gallery h1{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.home-MB .scroll_gallery{
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5em 3rem -0.75em hsla(0,0%,0%,0.25);
+  overflow-y: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.home-MB .scroll_gallery::-webkit-scrollbar {
+  display: none;
+}
+.home-MB .scroll_image{
+  width: 100%;
+  height: 500px;
+  margin-right: 15px;
+}
+.home-MB .scroll_image img{
+  object-fit: cover;
+  height: 100%;
+
+  scroll-snap-align: start;
+
+}
+
 
 .home-MB .gallery h1{
   text-align: center;
-  padding: 5% 0px;
+
   font-size: 20px;
+  font-weight: 600;
 }
+
+.home-MB .slider_nav{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+
+}
+.home-MB .slider_nav a{
+  color: #acacac;
+  padding: 1px 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: opacity ease 250ms;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin: 0px 10px;
+
+}
+.home-MB .slider_nav a:hover{
+  opacity: 1;
+
+}
+
+
+
+
+
+
+
 
 
 /* Location */
@@ -539,53 +686,75 @@ html{
   background-color: #292e28;
 }
 
-.home-MB .location .container{
+/* .home-MB .location .container{
   background-color: #292e28;
   padding-bottom: 5%;
-}
+} */
 
-.home-MB .location .row{
+/* .home-MB .location .row{
   box-shadow: 0px 0px 9px 0px white;
   background-color: white;
   margin: 0px 12px;
-}
+  border-radius: 5px;
+} */
+.home-MB .location .box_location{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px 0px white;
 
+  margin: 10px 0;
+
+}
+.home-MB .location .title_location {
+  width: 100%;
+
+
+}
 .home-MB .location .title_location h1{
   text-align: center;
-  padding: 5% 0px;
+  padding-top: 5%;
   font-size: 20px;
   color: white;
+  letter-spacing: 1.5px;
 }
 
 .home-MB .location .info_location{
-  width: 100%;
-  height: auto;
+  padding: 20px 0;
+  background-color: white;
+
+  display: flex;
+  margin: 0 20px;
 }
 
-.home-MB .location .info_location p{
-  text-align: center;
+
+.home-MB .location h3{
   color: black;
+  font-size: 13px;
+  margin: 5% 0;
+  font-weight: 600;
 }
 
-.home-MB .location .info_location h1{
-  font-size: 20px;
-  color: black;
-}
-
-.home-MB .location .info_location b{
-  font-weight: bold;
+.home-MB .location p{
+  font-size: 11px;
+  color: #acacac;
+  margin: 2% 0;
 }
 
 .home-MB .location .map_location{
+  padding: 20px 0;
+
+
+}
+.home-MB .location  .map_location{
+  width: 90%;
+  height: 100%;
+}
+.home-MB .location  .map_location iframe{
   width: 100%;
-  height: auto;
-  padding: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
-.home-MB .location .map_location iframe{
-  width: 150px;
-  height: auto;
-}
 
 @media only screen and (max-width: 1024px) {
   .home-PC{

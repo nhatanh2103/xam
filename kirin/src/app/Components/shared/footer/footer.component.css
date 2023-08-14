@@ -3,7 +3,7 @@
 .footer-PC {
   box-shadow: 0px 0px 4px 0px black;
   border-top: 1px solid black;
-  padding: 40px 0;
+
   background-image: radial-gradient(#343933, #282d27, #242621);
 }
 
@@ -36,7 +36,9 @@
 
 
 
-
+.footer{
+  padding: 40px 0;
+}
 .footer_logo {
   margin-top: 10px;
   width: 240px;
@@ -82,7 +84,7 @@
 
 .footer-PC .high_text3 h1{
   padding-top: 10px;
-  
+
 }
 
 .footer_mid .location h4{
@@ -141,6 +143,7 @@
   transition: 0.5s;
 }
 
+/* reserved */
 .reserved{
   background-color: black;
   padding: 10px 0;
@@ -152,44 +155,55 @@
   letter-spacing: 1.5;
 }
 
-/* Mobile */
+/* ------------------------------------------Mobile---------------------------------- */
 .footer-MB{
   background-color: #292e28;
-  margin-top: 20px;
-  height: 500px;
-  position: relative;
+
+
+
 }
 
-.footer-MB h1{
-  font-size: 20px;
-  color: white;
-}
 
-.footer-MB b{
-  font-weight: bold;
-  color: white;
+.footer-MB .footerr{
+  padding-bottom: 13%;
 }
 
 .footer-MB .footer_logo{
-  left: 12px;
+  width: auto;
+  height: 100%;
+  position: relative;
 }
 
 .footer-MB .footer_logo img{
-  width: 100px;
-  position: relative;
-  left: 12px;
+  width: auto;
+  position: absolute;
+  height: 150%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .footer-MB .footer_text{
   position: relative;
   margin-top: 20px;
   text-align: center;
+  position: relative;
 }
-
+.footer-MB .footer_text .follow h1{
+  font-family: abe;
+  font-size: 18px;
+  color: #acacac;
+  margin: 5% 0;
+}
+.footer-MB .footer_text .nav_follow{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
 .footer-MB .footer_text .nav_follow li{
-  display: inline-block;
+  margin: 0 10px;
 }
-
 .footer-MB .footer_text .nav_follow li svg{
   font-size: 25px;
 }
@@ -207,6 +221,15 @@
 .footer-MB .footer_text .nav_follow li:hover svg {
   color: #101011;
   transition: 0.5s;
+}
+.footer-MB .reservedd{
+  background-color: black;
+  padding: 5px 0;
+  border-top: 1px solid black;
+}
+.footer-MB .reservedd p{
+  color: #acacac;
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
