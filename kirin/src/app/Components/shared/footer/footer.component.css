@@ -43,6 +43,7 @@
   margin-top: 10px;
   width: 240px;
   position: relative;
+  float: right;
 }
 
 .footer_logo img{
