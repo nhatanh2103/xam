@@ -21,6 +21,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 ul{
 	list-style: none;
 }

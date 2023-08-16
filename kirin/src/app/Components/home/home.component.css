@@ -1,7 +1,3 @@
-html{
-  scroll-behavior: smooth;
-}
-
 /* wrapper */
 .home-PC .wrapper{
   background-image: url("../../../assets/img/wallpaperflare_dark.png");
@@ -13,7 +9,28 @@ html{
 
 }
 
+.home-PC .arrow{
+  position: absolute;
+  z-index: 9999;
+  float: right;
+  position: sticky;
+  top: 90%;
+  right: 12px;
+}
 
+.home-PC .arrow a{
+  color: black;
+}
+
+.home-PC .arrow a:hover svg{
+  color: red;
+}
+
+.home-PC .arrow svg{
+  width: 60px;
+  height: auto;
+  transition: font 5s;
+}
 
 .home-PC .wrapper .box{
   position: absolute;
@@ -241,6 +258,13 @@ html{
   color: black;
   font-weight: 700;
   font-family: abe;
+}
+
+/* Some view of studio */
+.carousel button .carousel-control-prev-icon,
+.carousel button .carousel-control-next-icon{
+  border-radius: 5px;
+  background-color: black;
 }
 
 /* Gallery */
