@@ -1,6 +1,6 @@
 /* wrapper */
 .home-PC .wrapper{
-  background-image: url("../../../assets/img/wallpaperflare_dark.png");
+  background-image: url("../../../assets/img/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
 
   height: 680px;
@@ -271,12 +271,31 @@
 
 .gallery{
   background-color: white;
-  padding-bottom: 30px;
+  height: 1200px;
 }
 
-.home-PC .gallery .gallery_image{
-  margin: 35px 0;
+.home-PC .scroll{
+  margin: 50px;
+  display: flex;
+  height: 1100px;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
 }
+
+.home-PC .scroll{
+  margin-top: 30px;
+}
+
+.home-PC .scroll .col-4{
+  margin-top: 10px;
+}
+
+.scroll::-webkit-scrollbar{
+  display: none;
+}
+
 .home-PC .gallery .gale_img{
   height: 500px;
   width: 100%;
@@ -376,8 +395,6 @@
 .home-PC .slider_wrapper .carousel-item img{
   border-radius: 5px;
 }
-
-
 
 /* contact */
 
@@ -649,9 +666,9 @@
   height: auto;
   display: flex;
 }
-.home-MB .scroll_gallery::-webkit-scrollbar {
+/* .home-MB .scroll_gallery::-webkit-scrollbar {
   display: none;
-}
+} */
 .home-MB .scroll_image{
   width: 100%;
   height: 500px;
