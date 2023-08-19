@@ -17,6 +17,7 @@
 .footer-PC .telephone,
 .footer-PC .email{
   display: flex;
+  flex-wrap: nowrap;
   margin: 5px 0;
 }
 
@@ -28,13 +29,14 @@
   width: 20px;
   font-size: 20px;
   margin-right: 5px;
-  /* margin-top: 1px; */
   color: #acacac;
   margin-bottom: 10px;
-
 }
 
-
+.footer-PC .email span{
+  position: relative;
+  top: -13px;
+}
 
 .footer{
   padding: 40px 0;
