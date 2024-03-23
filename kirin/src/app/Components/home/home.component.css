@@ -1,4 +1,9 @@
 /* wrapper */
+.home-MB, .home-PC {
+  background-color: #343933 !important;
+  color: white !important;
+}
+
 .home-PC .wrapper{
   background-image: url("../../../assets/img/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
@@ -54,12 +59,21 @@
   font-size: 18px;
 }
 
+.home-PC .wrapper .box h3,
+.home-PC .wrapper .box h1{
+  font-size: 62px;
+}
+
+.home-PC .wrapper .box p {
+  color: rgb(255 3 3);
+}
+
+
 .home-PC .wrapper .box p,
 .home-PC .wrapper .box h3,
 .home-PC .wrapper .box h1{
   text-shadow: #000000cc;
   font-family: abe;
-  color: white;
   text-align: center;
 }
 
@@ -136,7 +150,7 @@
   transform: translate(-50%, -50%);
   height: 2px;
   width: 140px;
-  background-color: black;
+  background-color: white;
 }
 
 .home-PC .about_us .open_close{
@@ -195,7 +209,7 @@
 .home-PC .about_us .text span{
   font-weight: 600;
   font-family: abe;
-  color: black;
+  /* color: black; */
 }
 
 .home-PC .about_us .h_text h3{
@@ -207,7 +221,7 @@
 .home-PC .about_us .text p{
 
   font-family: abe;
-  color: rgba(0, 0, 0, 0.685);
+  /* color: rgba(0, 0, 0, 0.685); */
   text-align: justify;
   line-height: 1.5;
   font-size: 17px;
@@ -226,7 +240,7 @@
 }
 .home-PC .map .map_left p{
   font-family: abe;
-  color: rgba(0, 0, 0, 0.685);
+  color: white;
   text-align: justify;
   line-height: 1.5;
   font-size: 17px;
@@ -255,7 +269,7 @@
 }
 
 .home-PC .map span{
-  color: black;
+  /* color: black; */
   font-weight: 700;
   font-family: abe;
 }
@@ -270,7 +284,6 @@
 /* Gallery */
 
 .gallery{
-  background-color: white;
   height: 1200px;
 }
 
@@ -347,7 +360,7 @@
   transform: translate(-50%, -50%);
   height: 2px;
   width: 110px;
-  background-color: black;
+  background-color: white;
 }
 
 .home-PC .slider_wrapper{
@@ -389,7 +402,6 @@
   text-align: center;
   font-weight: 500;
   font-family: abe;
-  color: black;
   margin-bottom: 30px;
 }
 
@@ -401,7 +413,7 @@
   transform: translate(-50%, -50%);
   height: 2px;
   width: 320px;
-  background-color: black;
+  background-color: white;
 }
 
 
@@ -629,7 +641,7 @@
   overflow: hidden;
 }
 .home-MB .infor span{
-  color: black;
+  /* color: black; */
   font-size: 10px;
 }
 .home-MB .infor h1{
